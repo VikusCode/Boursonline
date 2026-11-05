@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f5f2;
+    color: #1a1a1a;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 48px 40px;
+    width: 340px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 28px;
+    line-height: 1.3;
+    color: #1a1a1a;
+}
+
+h1 em {
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.15s ease;
+}
+
+.btn-primary {
+    background: #1a1a1a;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #333;
+}
+
+.btn-secondary {
+    background: #f0efed;
+    color: #1a1a1a;
+}
+
+.btn-secondary:hover {
+    background: #e6e4e1;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: #bbb;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.btn-ghost:hover {
+    color: #888;
+}
+
+.divider {
+    height: 1px;
+    background: #f0efed;
+    margin: 4px 0;
+}

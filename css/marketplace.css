@@ -1,0 +1,179 @@
+body {
+    background-color: #f4f6f9;
+    font-family: 'Outfit', sans-serif;
+    color: #2d3436;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.market-header {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.market-header h2 {
+    font-size: 2.2rem;
+    color: #9b59b6;
+    margin-bottom: 10px;
+}
+
+.market-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.search-bar-container input {
+    width: 60%;
+    max-width: 500px;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    transition: 0.3s;
+    font-family: 'Outfit', sans-serif;
+}
+
+.search-bar-container input:focus {
+    border-color: #fefefe;
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.2);
+}
+
+.search-bar-container button {
+    padding: 10px 30px;
+    background: #9b59b6;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.search-bar-container button:hover {
+    background: #8e44ad;
+    box-shadow: 0 5px 15px rgba(155, 89, 182, 0.4);
+    transform: translateY(-2px);
+}
+
+.market-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.placeholder-msg {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    color: #95a5a6;
+    font-size: 1.2rem;
+}
+
+.stock-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.stock-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(155, 89, 182, 0.2);
+    border-color: #9b59b6;
+}
+
+.stock-symbol {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.stock-name {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    min-height: 48px; 
+}
+
+.stock-details {
+    font-size: 0.9rem;
+    background: #ecf0f1;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.stock-action-btn {
+    width: 100%;
+    padding: 10px 0;
+    background: #27ae60;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.stock-card:hover .stock-action-btn {
+    background: #2ecc71;
+    box-shadow: 0 5px 10px rgba(46, 204, 113, 0.3);
+}
+
+/* Dark Mode Overrides for Marketplace */
+html.dark-mode .main-container {
+    background-color: #1e1e24;
+    border-color: #333;
+}
+html.dark-mode .market-header h2 {
+    color: #e056fd;
+}
+html.dark-mode .search-bar-container input {
+    background: #2d2d35;
+    color: #f1f2f6;
+    border-color: #555;
+}
+html.dark-mode .stock-card {
+    background: #2d2d35;
+    border-color: #444;
+}
+html.dark-mode .stock-card .stock-symbol {
+    color: #f1f2f6;
+}
+html.dark-mode .stock-card .stock-details {
+    background: #444;
+    color: #ccc;
+}
+html.dark-mode .placeholder-msg {
+    color: #aaa;
+}
